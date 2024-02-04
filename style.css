@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+}
+body {
+    width: 100%;
+    color: white;
+    list-style: none;
+    background-color: black;
+}
+
+.header {
+    background-color: #1c1b2b;
+}
+
+.menu{
+    color: #FFFFFF;
+    overflow: hidden;
+}
+.rightnav {
+    width: 50%;
+    float: right;
+    font-family: pixel;
+}
+.leftnav {
+    margin-top: 10px;
+    float: left;
+}
+.rightnav ul {
+    float: right;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.rightnav li {
+    color: white;
+    font-size: 20px;
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.sitename{ 
+    font-size: 20px;
+    font-family: pixel;
+}
+.headergif {
+    margin-left: 20px;
+    height: 50px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+/* End of NavBar */
+/* Start of Body */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    
+}
+#startBtn, #stopBtn {
+    color: white;
+    font-family: pixel;
+    border-spacing: 25px;
+}
+.btnstart {
+    float: left;
+    margin-left: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 12px;
+    padding-bottom: 5px;
+}
+
+.btnstop {
+    float: right;
+    margin-right: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 12px;
+    padding-bottom: 5px;
+}
+
+.activeStart {
+    background-color: green;
+    float: left;
+    width: 100px;
+    height: 40px;
+    border-radius: 12px;
+    padding-bottom: 5px;
+}
+
+.inactiveStart {
+    background-color: gray;
+    float: left;
+    width: 100px;
+    height: 40px;
+    border-radius: 12px;
+    padding-bottom: 5px;
+}
+
+.activeStop {
+    background-color: #ff1515;
+    float: right;
+    width: 100px;
+    height: 40px;
+    border-radius: 12px;
+    padding-bottom: 5px;
+}
+
+.inactiveStop {
+    background-color: gray;
+    float: right;
+    width: 100px;
+    height: 40px;
+    border-radius: 12px;
+    padding-bottom: 5px;
+}
+.grid {
+    margin: auto;
+    border-spacing: 40px;
+}
+.cell {
+    background-color: #1c1c1c;
+    font-family: pixel;
+    color: white;
+    width: 120px;
+    height: 200px;
+    border: 3px #04D9FF solid;
+    border-radius: 15px;
+    outline: 3px #ff1515 solid;
+    outline-offset: 5px;
+    text-align: center;
+}
+.bodytext, #randomNo {
+    text-align: center;
+    color: white;
+    font-family: pixel;
+    padding-top: 20px;
+}
+.grid td {
+    color: white;
+    text-align: center;
+}
+.history {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-family: pixel;
+}
+.history h1{
+    color: #f3ff00;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+#history {
+    list-style: none;
+    line-height: 1.3em;
+    font-size: 20px;
+    color: #04D9FF;
+}
+.main {
+    text-align: center;
+    margin-top: 20px;
+    font-family: pixel;
+    font-size: 30px;
+}
+.reset {
+    display: flex;
+    justify-content: center;
+}
+
+#resetBtn {
+    color: white;
+    font-family: pixel;
+    font-size: 15px;
+    background-color: #ff1515;
+    width: 150px;
+    height: 40px;
+    border-radius: 12px;
+    padding-bottom: 5px;
+}
+
+.scoregrid {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.scoregrid h1 {
+    color: #ff1515 !important;
+}
+.scoregrid h1,h2 {
+    text-align: center;
+    font-family: pixel;
+    color: #f3ff00;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.highscores ol {
+    font-family: pixel;
+    list-style: none;
+    text-align: center;
+    line-height: 1.7em;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: -40px;
+}
+.innerbox {
+    width: 300px;
+    margin: auto;
+    border: 1px white solid;
+    border: 3px #04D9FF solid;
+    border-radius: 15px;
+    outline: 3px #f3ff00 solid;
+    outline-offset: 5px;
+}
+.yourhighscore {
+    display: flex;
+    overflow: hidden;
+}
+@font-face {
+    font-family: pixel;
+    src: url(PublicPixel-z84yD.ttf);
+}

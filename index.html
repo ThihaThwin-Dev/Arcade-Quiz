@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu">
+            <div class="leftnav">
+                <img src="arcade.gif" alt="" class="headergif">
+                <span class="sitename">Arcade</span>
+            </div>
+            <div class="rightnav">
+                <ul>
+                    <li class="quiz">Quiz!</li>
+                    <li class="leaderboards">LeaderBoards</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end of header! -->
+    <div class="body">
+        <div id="activeBody">
+            <p class="bodytext">What is <span id="randomNo"> </span>?</p>
+            <table class="grid">
+                <tr>
+                    <td id="firstCell" class="cell" onclick="answerPress(this)"></td>
+                    <td id="secondCell" class="cell" onclick="answerPress(this)"></td>
+                    <td id="thirdCell" class="cell" onclick="answerPress(this)"></td>
+                </tr>
+            </table>
+        </div>
+        <table id="scoreGrid" class="scoregrid">
+            <tr>
+                <td class="highscores">
+                    <h1>Stranger Things</h1>
+                    <h2>Dig Dug</h2>
+                    <ol>
+                        <div class="innerbox">
+                            <li>1ST 751300 MADMAX</li>
+                            <li>2ND 650990 DUSTIN</li>
+                            <li>3RD 641183 LUCAS* </li>
+                            <li>4TH 620784 JKRACH</li>
+                            <li>5TH 552415 DUSTIN</li>
+                        </div>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="buttons">
+        <button id="startBtn" onclick="start()" class="btnstart activeStart">Start</button>
+        <button id="stopBtn" onclick="stop()" class="btnstop inactiveStop">Stop</button>
+    </div>
+    <div class="reset">
+        <button id="resetBtn" onclick="resetAll()">Restart</button>
+    </div>
+    <div class="main">
+        <p class="score">
+            Score : <span id="scoreBoard">000000</span>
+        </p>
+        <p class="time">
+            Play Count : <span id="timePlayed">000000</span>
+        </p>
+    </div>
+    </div>
+    <div class="history">
+        <div class="yourhighscore">
+            <ol>
+                <h1>Your HighScore <span>&#8595</span>
+                </h1>
+                <span id="history"></span>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>
